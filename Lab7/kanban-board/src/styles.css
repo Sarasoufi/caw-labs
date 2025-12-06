@@ -1,0 +1,106 @@
+body {
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(135deg, #ffffff, #d6e8d0); /* أبيض → أخضر فاتح */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0 0 12px 0;
+  color: #31572c; /* أخضر داكن */
+}
+
+/* Form */
+.task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.task-form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #b08968; /* بني متوسط */
+  background: #ffffff;
+}
+
+.task-form button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #7ca982, #31572c); /* تدرّج أخضر */
+  color: white;
+}
+
+/* Board */
+.board {
+  display: flex;
+  gap: 16px;
+}
+
+/* Columns */
+.column {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 240px;
+  box-shadow: 0 1px 3px rgba(49, 87, 44, 0.15);
+  border: 1px solid #e8d4b0; /* بني فاتح */
+}
+
+.column h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #7f5539; /* بني داكن */
+}
+
+.task-list {
+  min-height: 50px;
+}
+
+/* Task Card */
+.task-card {
+  background: #d6e8d0; /* أخضر فاتح */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 1px rgba(49, 87, 44, 0.1);
+  border: 1px solid #b5d1a5; 
+}
+
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.task-actions button {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #7f5539; 
+  cursor: pointer;
+  background: #ffffff;
+  color: #31572c; 
+}
+
+.task-actions button:hover {
+  background: #e8d4b0; 
+}
+
+.status-pill {
+  padding: 4px 8px;
+  border-radius: 12px;
+  background: #ae8057; 
+  font-size: 12px;
+  color: #f9f8f7; 
+}
